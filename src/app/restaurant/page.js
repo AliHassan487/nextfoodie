@@ -10,20 +10,15 @@ const Restaurant = () => {
 
   return (
     <>
-      {/* Header */}
       <RestaurantHeader />
-
-      {/* Main Section */}
       <main className="flex flex-col items-center justify-center min-h-screen bg-black text-white overflow-hidden">
         <div className="w-full max-w-md bg-gray-800 rounded-lg shadow-lg p-8">
           <h1 className="text-3xl font-bold text-center mb-6">
             Welcome to Restaurant Portal
           </h1>
 
-          {/* Render Login or Signup Form */}
           {isLogin ? <RestaurantLogin /> : <RestaurantSignUp />}
 
-          {/* Toggle Between Login and Signup */}
           <button
             onClick={() => setIsLogin(!isLogin)}
             className="mt-6 w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded-lg transition"
