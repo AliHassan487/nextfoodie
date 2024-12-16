@@ -11,7 +11,8 @@ const Restaurant = () => {
   return (
     <>
       <RestaurantHeader />
-      <main className="flex flex-col items-center justify-center min-h-screen bg-black text-white overflow-hidden">
+
+      <main className="flex flex-col items-center justify-start min-h-screen bg-black text-white pt-20">
         <div className="w-full max-w-md bg-gray-800 rounded-lg shadow-lg p-8">
           <h1 className="text-3xl font-bold text-center mb-6">
             Welcome to Restaurant Portal
